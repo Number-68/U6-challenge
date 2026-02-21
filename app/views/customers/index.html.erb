@@ -1,9 +1,12 @@
 
 
-<h1 class="title">All Customers</h1>
+<h1 class="title has-text-dark">All Customers</h1>
 
 
-
-<% @customers.each do |customer| %>
-    <%= render "customer", customer: customer %>
-<% end %>
+<div class="columns is-multiline">
+    <% @customers.each do |customer| %>
+        <div class="column is-one-third m-3">
+            <%= render "customer", customer: customer %>
+        </div>
+    <% end %>
+</div>
