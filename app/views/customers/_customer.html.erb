@@ -11,14 +11,19 @@
 
 
 
-        <figure class="image is-128x128">
-          <%= image_tag customer.image_url if customer.image_url.present? %>
-        </figure>
+      <figure class="image is-128x128">
+        <% if customer.image.attached? %>
+          <%= image_tag customer.image %>
+        <% end %>
+      </figure>
       </div>
 
       <div class="media-content">
-        <p class="title is-4"><%= customer.name %></p>
-        <p class="subtitle is-6"><%= customer.email %></p>
+        <p class="title is-4"><%= customer.full_name %></p>
+        <p class="subtitle is-6"><%= customer.email_address %></p>
+        <p class="subtitle is-8"><%= customer.phone_number %></p>
+        
+
       </div>
     </div>
 

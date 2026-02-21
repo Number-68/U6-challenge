@@ -1,0 +1,9 @@
+
+
+<h1 class="title">All Customers</h1>
+
+
+
+<% @customers.each do |customer| %>
+    <%= render "customer", customer: customer %>
+<% end %>
