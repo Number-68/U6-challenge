@@ -19,4 +19,12 @@ Rails.application.routes.draw do
   # route to customers/index
   get "customers/index", to: "customers#index"
 
+
+  # route to alphabetized
+  get "customers/alphabetized", to: "customers#alphabetized"
+
+
+  # route to missing email
+  get "customers/missing_email", to: "customers#missing_email"
+
 end

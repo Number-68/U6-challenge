@@ -1,0 +1,11 @@
+<h1 class="title">Customers Missing Email</h1>
+
+<% @customers.each do |customer| %>
+  <%= render "customer", customer: customer %>
+<% end %>
+
+<p>
+  <a href="/">All Customers</a> |
+  <a href="/customers/alphabetized">Alphabetized</a>
+</p>
+
