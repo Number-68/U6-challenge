@@ -1,6 +1,13 @@
 <h1 class="title has-text-dark">Customers Missing Email</h1>
 
 
+<nav>
+    <%= link_to "Home", root_path %>
+    <%= link_to "Alphabetized Customers", customers_alphabetized_path %>
+    <%= link_to "Customers Missing Email", customers_missing_email_path %>
+</nav>
+
+
 <div class="columns is-multiline">
     <% @customers.each do |customer| %>
         <div class="column is-one-third m-3">
